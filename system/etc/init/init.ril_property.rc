@@ -1,0 +1,88 @@
+#
+# To manage something related to OMC in RIL
+#
+
+# USA
+on property:ro.csc.omcnw_code=ACG
+    setprop ro.ril.ecclist "911,#911,*911"
+    setprop ro.com.android.dataroaming "true"
+    setprop ro.telephony.default_network 10
+    setprop ro.cdma.home.operator.numeric 310000
+    setprop ro.cdma.home.operator.alpha "Default"
+
+on property:ro.csc.omcnw_code=AIO
+    setprop ro.telephony.default_network 9
+
+on property:ro.csc.omcnw_code=ATT
+    setprop ro.telephony.default_network 9
+    
+on property:ro.csc.omcnw_code=BST
+    setprop ro.ril.ecclist "911,#911,*911"
+    setprop ro.telephony.default_network 10
+    setprop ro.com.android.dataroaming "true"
+
+on property:ro.csc.omcnw_code=SPR
+    setprop ro.ril.ecclist "911,#911,*911"
+    setprop ro.telephony.default_network 10
+    setprop ro.com.android.dataroaming "true"
+
+on property:ro.csc.omcnw_code=VMU
+    setprop ro.ril.ecclist "911,#911,*911"
+    setprop ro.telephony.default_network 10
+    setprop ro.com.android.dataroaming "true"
+
+on property:ro.csc.omcnw_code=XAS
+    setprop ro.ril.ecclist "911,#911,*911"
+    setprop ro.telephony.default_network 10
+    setprop ro.com.android.dataroaming "true"
+    
+on property:ro.csc.omcnw_code=CCT
+    setprop ro.telephony.default_network 10
+    setprop ro.ril.ecclist "911,*272911"
+
+on property:ro.csc.omcnw_code=CHA
+    setprop ro.ril.ecclist "911,*272911"
+    setprop ro.telephony.default_network 10
+    setprop ro.com.android.dataroaming "true"
+
+on property:ro.csc.omcnw_code=LRA
+    setprop ro.ril.ecclist "911,*272911"
+    setprop ro.telephony.default_network 10
+    setprop ro.com.android.dataroaming "true"
+    setprop ro.cdma.home.operator.numeric 310000
+    setprop ro.cdma.home.operator.alpha "Default"
+
+on property:ro.csc.omcnw_code=TMB
+    setprop ro.telephony.default_network 9
+
+on property:ro.csc.omcnw_code=TMK
+    setprop ro.telephony.default_network 9
+
+on property:ro.csc.omcnw_code=TFN
+    setprop ro.ril.ecclist "911,*272911"
+    setprop ro.telephony.default_network 8
+    setprop ro.cdma.home.operator.numeric 310000
+    setprop ro.cdma.home.operator.alpha "TracFone"
+
+on property:ro.csc.omcnw_code=USC
+    setprop ro.ril.ecclist "911,#911,*911,*272911"
+    setprop ro.telephony.default_network 10
+    setprop ro.com.android.dataroaming "true"
+    setprop ro.cdma.home.operator.numeric "311580"
+    setprop ro.cdma.home.operator.alpha "U.S. Cellular"
+
+on property:ro.csc.omcnw_code=VZW
+    setprop ro.ril.ecclist "911,*272911"
+    setprop ro.telephony.default_network 10
+
+on property:ro.csc.omcnw_code=FKR
+    setprop ro.ril.ecclist "911,*272911"
+    setprop ro.telephony.default_network 11
+    setprop ro.com.android.dataroaming "true"
+
+on property:ro.csc.omcnw_code=XAA
+    setprop ro.telephony.default_network 10
+
+# Depending on default_network
+on property:ro.telephony.default_network=10
+    setprop telephony.lteOnCdmaDevice 1

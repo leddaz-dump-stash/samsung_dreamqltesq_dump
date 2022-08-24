@@ -1,0 +1,7 @@
+<permissions>
+    <privapp-permissions package="com.lookout">
+        <permission name="android.permission.MANAGE_DEVICE_ADMINS"/>
+	<permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+	<permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+</permissions>

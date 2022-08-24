@@ -1,0 +1,5 @@
+<permissions>
+    <privapp-permissions package="com.tmobile.simlock">
+            <permission name="android.permission.REBOOT"/>
+    </privapp-permissions>
+</permissions>

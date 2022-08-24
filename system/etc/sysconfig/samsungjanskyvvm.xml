@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- Janskyvvm must run always for vvm notification and sync. -->
+    <allow-in-power-save package="com.samsung.tmovvm" />
+    <allow-in-power-save-except-idle package="com.samsung.tmovvm" />
+</config>
